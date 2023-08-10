@@ -1,0 +1,31 @@
+---
+import MetaHead from "../components/commons/MetaHead.astro";
+
+const {
+  title = "Yunus Afghoni Personal Site",
+  description = "Software developer for mobile and fullstack application",
+} = Astro.props;
+---
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <MetaHead title={title} description={description} />
+  </head>
+  <body class="bg-gray-900 flex justify-center">
+    <div class="w-10/12 md:w-1/2 h-screen items-center">
+      <!-- Header -->
+      <div class="flex justify-between py-8">
+        <a href="/" class="items-center">
+          <h1 class="text-3xl text-orange-500 font-bold">YA.</h1>
+        </a>
+        <ul class="flex items-end gap-x-6 text-orange-500 font-serif">
+          <li>Home</li>
+          <li>Blog</li>
+        </ul>
+      </div>
+      <!-- Body -->
+      <slot />
+    </div>
+  </body>
+</html>

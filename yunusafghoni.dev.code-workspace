@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../astrowind"
+		}
+	],
+	"settings": {
+		"editor.tabSize": 2
+	}
+}
